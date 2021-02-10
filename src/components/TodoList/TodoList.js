@@ -48,6 +48,7 @@ class TodoList extends React.Component {
     render() {
       return (
           <div className="TodoList">
+              
             <input type="text" placeholder="Add Item" value={this.state.newItem} onChange={e => this.updateInput("newItem", e.target.value)}/>
             <button onClick={() => this.addItem()} disabled={!this.state.newItem.length}>+</button>
 
@@ -61,6 +62,7 @@ class TodoList extends React.Component {
                 );
               })}
             </ul>
+
         </div>
       );
     }
